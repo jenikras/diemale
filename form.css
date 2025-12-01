@@ -1,0 +1,61 @@
+
+
+form{padding:20px; max-width: 400px; border: 1px solid ddd;}
+
+form fieldset {
+            display: flex;
+            align-items: center;
+            border: 0;
+        }
+
+        form fieldset:nth-child(odd) {
+            background-color: #fff
+        }
+
+        form fieldset:nth-child(even) {
+            background-color: #eee
+        }
+
+        form fieldset label {
+            width: 30%;
+            text-align: right;
+            font-family: Arial;
+            font-size: 12px
+        }
+
+        form fieldset input#agreepolicy [type="checkbox"] {
+            width: 20px !important
+        }
+
+        form fieldset input,
+        form fieldset select {
+            width: 40%;
+            padding: 4px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form fieldset label,
+        form fieldset input {
+            margin: 0 5px;
+        }
+
+
+        div#themeText {
+            font-size: 15px;
+            padding-left: 15px
+        }
+
+        .error {
+            border: 1px solid red
+        }
+
+
+        input#check{
+            background-color:cornflowerblue;
+            height: 36px
+        }
+        input#submit{
+            background-color: chartreuse;
+            height: 36px
+        }
