@@ -1,19 +1,27 @@
 
 
-form{padding:20px; max-width: 400px; border: 1px solid ddd;}
+form{  
+    background-color: #eee;
+    color:rgb(14, 56, 100);
+    padding:20px 10px;
+    max-width: 320px;
+    border: 1px solid ddd;
+    border-radius: 0 0 1000px 0 ;
+}
 
 form fieldset {
             display: flex;
             align-items: center;
             border: 0;
+        
         }
 
         form fieldset:nth-child(odd) {
-            background-color: #fff
+            
         }
 
         form fieldset:nth-child(even) {
-            background-color: #eee
+            
         }
 
         form fieldset label {
@@ -33,6 +41,11 @@ form fieldset {
             padding: 4px;
             border: 1px solid #ddd;
             border-radius: 5px;
+        }
+
+        #mycanvas {
+            border:1px dotted #c0b2b2;
+            width: 40%;
         }
 
         form fieldset label,
@@ -59,3 +72,10 @@ form fieldset {
             background-color: chartreuse;
             height: 36px
         }
+
+        *::placeholder {
+  color: #6600FF;
+  opacity: 0.5;
+  letter-spacing: 0.4px
+  
+}
