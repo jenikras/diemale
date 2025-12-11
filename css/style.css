@@ -1,6 +1,55 @@
 
 * {box-sizing: border-box; margin: 0; padding: 0;}
 
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+h1, h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 48px;
+  font-style: italic;
+}
+
+h1 {
+ color:#0a0a0a
+}
+
+h2{
+  color:#a8c103;
+  line-height: 1;
+}
+
+aside h2{
+  font-size: 36px; 
+}
+
+aside #slider h2{
+  color:#7cbee7
+}
+
+aside #news h2{
+  color:#aff5c9
+}
+
+
+
+.highlighted {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+
+.typing {
+  font-family: "PT Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
 #logo{
   width: 200px
 }
