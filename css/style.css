@@ -5,17 +5,39 @@
   width: 200px
 }
 
+
+
+#transactions a{
+  margin: 0px 5px;
+  display: inline-block;
+}
+
+
+#transactions img{
+  width: 24px;
+  height: auto;
+}
+
 main {
   width: 70%;
   float:left;
 }
-#images-main img{
-  width: 50%
+
+#images-main {
+width:100%;
+font-size: 0;
+}
+#images-main .img{
+  width: 50%;
+  display: inline-block;
+}
+#images-main .img img{
+  width: 100%;
 }
 
 aside {
   width: 25%;
-  float:left;
+  float:right;
 }
 .slides {
   width: 120px
@@ -23,6 +45,23 @@ aside {
 .slides img{
   width:100px
 }
+
+.more {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 12px;
+}
+
+.more hr{
+  width: 90%;
+  display: inline-block;
+}
+
+.more span{
+  width: 7%;
+  display: inline-block;
+}
+
 footer {
   clear: both;
   margin-top: 20px;
