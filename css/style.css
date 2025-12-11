@@ -1,6 +1,32 @@
 
+* {box-sizing: border-box; margin: 0; padding: 0;}
 
-a {font-family: Arial; font-size:12px; text-decoration: underline;}
+#logo{
+  width: 200px
+}
+
+main {
+  width: 70%;
+  float:left;
+}
+#images-main img{
+  width: 50%
+}
+
+aside {
+  width: 25%;
+  float:left;
+}
+.slides {
+  width: 120px
+}
+.slides img{
+  width:100px
+}
+footer {
+  clear: both;
+  margin-top: 20px;
+}
 
   .popup {
   position: fixed;
