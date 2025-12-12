@@ -16,14 +16,14 @@
 
         .circle-menu {
             position: fixed;
-            top: 25%;
-            right: 15%;
-            transform: translate(50%, -50%);
+            top: 0;
+            right: 0;
+            transform: translate(15%, -15%);
             width: 0;
             height: 0;
             border-radius: 50%;
             background-color: #3498db;
-            transition: width 0.5s ease, height 0.5s ease;
+            transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
             overflow: hidden;
             visibility: hidden;
         }
@@ -33,13 +33,14 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: left;
+            padding: 20px 0 0 80px;
             height: 100%;
             margin: 0;
         }
 
         .menu li {
-            margin: 10px 0;
+            margin: 5px 0;
         }
 
         .menu a {
