@@ -1,81 +1,106 @@
+.twocolumns {
+    display: flex
+}
 
+form {
+    border-left: 1px solid #c0b2b2;
+    color: #010101;
+    padding: 20px 0 0 50px;
+    max-width: 600px;
 
-form{  
-    background-color: #eee;
-    color:rgb(14, 56, 100);
-    padding:20px 10px;
-    max-width: 320px;
-    border: 1px solid ddd;
-    border-radius: 0 0 1000px 0 ;
 }
 
 form fieldset {
-            display: flex;
-            align-items: center;
-            border: 0;
-        
-        }
+    display: flex;
+    align-items: center;
+    border: 0;
+    margin-bottom: 15px
+}
 
-        form fieldset:nth-child(odd) {
-            
-        }
+form fieldset.left {
+    align-items: left;
+    text-align: left;
+}
 
-        form fieldset:nth-child(even) {
-            
-        }
+form fieldset:nth-child(odd) {}
 
-        form fieldset label {
-            width: 30%;
-            text-align: right;
-            font-family: Arial;
-            font-size: 12px
-        }
+form fieldset:nth-child(even) {}
 
-        form fieldset input#agreepolicy [type="checkbox"] {
-            width: 20px !important
-        }
+form fieldset label {
+    width: 30%;
+    text-align: right;
+    font-size: 1.1rem
+}
 
-        form fieldset input,
-        form fieldset select {
-            width: 40%;
-            padding: 4px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
+form fieldset input#agreepolicy [type="checkbox"] {
+    width: 20px !important;
 
-        #mycanvas {
-            border:1px dotted #c0b2b2;
-            width: 40%;
-        }
+}
 
-        form fieldset label,
-        form fieldset input {
-            margin: 0 5px;
-        }
+form fieldset input,
+form fieldset select,
+form fieldset textarea {
+
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #7d8282;
+}
+
+form fieldset select,
+form fieldset textarea {
+    margin-left: 5px
+}
+
+#mycanvas {
+    border: 1px dotted #c0b2b2;
+    width: 40%;
+}
+
+form fieldset label,
+form fieldset input {
+    margin: 0 5px;
+}
+
+#agreepolicy {
+    float: left
+}
+
+div#themeText {
+    font-size: 1.1rem;
+    padding-left: 15px
+}
+
+.error {
+    border: 1px solid red
+}
 
 
-        div#themeText {
-            font-size: 15px;
-            padding-left: 15px
-        }
+input#check {
+    background-color: cornflowerblue;
+    height: 36px
+}
 
-        .error {
-            border: 1px solid red
-        }
+input#submit {
+    background: url("../images/Send\ it.gif") no-repeat center;
+    background-size: 100%;
+    background-position: 100%;
+    width: 88px;
+    height: 26px;
+    margin-top: 20px;
+    margin-left: 150px;
+    display: block;
+    font-size: 0;
+    border: 0px;
+    cursor: pointer
+}
 
-
-        input#check{
-            background-color:cornflowerblue;
-            height: 36px
-        }
-        input#submit{
-            background-color: chartreuse;
-            height: 36px
-        }
-
-        *::placeholder {
-  color: #6600FF;
-  opacity: 0.5;
-  letter-spacing: 0.4px
-  
+*::placeholder {
+    font-family: "open-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #7d8282;
+    opacity: 0.5;
+    letter-spacing: 0.4px;
+    padding-left: 5px;
 }

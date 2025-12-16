@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contacts </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/pages123.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jdb1mrj.css">
+
+
+</head>
+
+<body>
+    <!-- Hamburger Icon (Checkbox for Toggle) -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger" id="menu">
+        <span class="opn">&#9776;</span>
+        <span class="clo">&#215;</span>
+    </label>
+    <!-- Circle Menu -->
+    <div class="circle-menu">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper">
+        <div class="twocolumns">
+            <div>
+                <div id="logo-sector">
+                    <img src="./images/DieGemaldeLogo.jpg" alt="DieGemaldeLogo" id="logo">
+                    <div id="translations">
+                        <a href="/" title="Translate to English"><img src="./images/en.gif"
+                                alt="Translate to English"></a>
+                        <a href="/" title="Translate to German"><img src="./images/de.gif"
+                                alt="Translate to German"></a>
+                        <a href="/" title="Translate to Italian"><img src="./images/it.gif"
+                                alt="Translate to Italian"></a>
+                        <a href="/" title="Translate to French"><img src="./images/fr.gif"
+                                alt="Translate to French"></a>
+                        <a href="/" title="Translate to Russian"><img src="./images/ru.gif"
+                                alt="Translate to Russian"></a>
+                        <a href="/" title="Translate to Ukranian"><img src="./images/ua.gif"
+                                alt="Translate to Ukranian"></a>
+                        <a href="/" title="Translate to Swiss"><img src="./images/ch.gif" alt="Translate to Swiss"
+                                id="ch"></a>
+                    </div>
+                </div>
+
+                <aside id="currencies">
+                    <p>
+                        <span>£ 1000.00</span>
+                        <span>$ 1000.00</span>
+                        <span>₴ 50.000</span>
+                    </p>
+                </aside>
+            </div>
+
+            <main>
+                <h2>Contacts</h2>
+                <p class="typing">All fields should be filled, and all fields should be filled according to their type
+                </p>
+                <form action="/" name="cformular">
+                    <fieldset>
+                        <label for="userName">Username</label>
+                        <input type="text" name="userName" id="userName" placeholder="John" size="20" maxlength="20"
+                            required value="">
+                    </fieldset>
+                    <fieldset>
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Your email @" size="20" maxlength="20"
+                            class="" required>
+                    </fieldset>
+
+                    <fieldset>
+
+                        <label for="tel">Tel</label>
+                        <input type="tel" name="tel" id="tel" placeholder="Your mobile number" size="20" maxlength="20"
+                            required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="theme">Payment method</label>
+
+                        <select id="theme" onchange="changepMethod()" name="theme">
+                            <option value="Prepayment">Prepayment</option>
+                            <option value="Paypal">Paypal</option>
+                            <option value="Bank payment">Bank payment</option>
+                        </select>
+
+                        <div id="themeText"></div>
+
+                    </fieldset>
+
+
+                    <!--Message box when needed-->
+
+                    <fieldset>
+                        <label for="cmessage">Message (wishes, sizes, material in short form)</label>
+                        <textarea name="cmessage" id="cmessage" cols="30" rows="10"></textarea>
+
+                    </fieldset>
+
+
+                    <fieldset>
+                        <label></label>
+                        <canvas id="myCanvas" class="fullwidth" height="50"></canvas>
+                    </fieldset>
+                    <fieldset>
+                        <label for="captcha">Enter the word you see above <br>with number at the end of
+                            phrase</label><br>
+                        <input type="text" name="captcha" id="captcha" placeholder="captcha" size="20" maxlength="20"
+                            required>
+                    </fieldset>
+
+                    <fieldset class="left">
+                        <label for="agreepolicy">I read and agree <a href="#">with policy</a> </label>
+                        <input type="checkbox" name="agreepolicy" id="agreepolicy" value="agree">
+                    </fieldset>
+                    <fieldset>
+                        <!--<input type="submit" value="Check" onclick="myFunctionCheck()" id="check">-->
+                        <input type="submit" value="Submit" onclick="myFunctionSubmit()" id="submit">
+                    </fieldset>
+
+
+                </form>
+                <div id="popupPolicy" class="popup">
+                    <div class="popup-content">
+                        <h1>Title here</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Optio sequi ea nisi aperiam numquam itaque aliquid, voluptate, suscipit dignissimos dolor et
+                            libero.
+                            Distinctio, debitis asperiores sapiente similique architecto ab quas.</p>
+                        <button id="closePopupPolicy">Close</button>
+                    </div>
+                </div>
+                <div id="popupBankDetails" class="popup">
+                    <div class="popupBank-content">
+                        <h1>Bank details</h1>
+                        <p>Please check the information carefully</p>
+                        <button id="closePopupBank">Close</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="table">
+
+            <table>
+                <tr>
+                    <th>Available Preorder Sizes</th>
+                    <th>Material</th>
+                    <th>Type</th>
+                    <th>Delivery timeline</th>
+                    <th>Customer - Artist Basic Agreement</th>
+                </tr>
+                <tr>
+                    <td>30x20, 30x20, 30x20, 30x20, 30x20</td>
+                    <td>Oil Art</td>
+                    <td>Painting</td>
+                    <td>60</td>
+                    <td><a href="/">Download sample</a></td>
+                </tr>
+                <tr>
+                    <td>30x20, 30x20, 30x20, 30x20, 30x20</td>
+                    <td>Painting</td>
+                    <td>Printed Art</td>
+                    <td>20</td>
+                    <td><a href="/">Download sample</a></td>
+                </tr>
+                <tr>
+                    <td>T-shirt, Pullover</td>
+                    <td>Digital Print</td>
+                    <td>Art on Good</td>
+                    <td>20</td>
+                    <td><a href="/">Download sample</a></td>
+                </tr>
+            </table>
+
+        </div>
+        <footer>
+
+            Copyright 2025 Die Gemalde Project
+            <a href="" id="button-concent">Consent</a>
+        </footer>
+    </div>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

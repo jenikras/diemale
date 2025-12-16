@@ -1,0 +1,77 @@
+.button-green {
+    background: url('../images/Write\ me.gif') no-repeat;
+    background-size: 100%;
+    background-position: 100%;
+    width: 88px;
+    height: 26px;
+    margin-top: 20px;
+    display: block;
+    font-size: 0;
+}
+
+#first {
+    width: 220px;
+    display: block;
+    float: left;
+    margin: 0px 40px 0 0;
+}
+
+#main {
+    float: left;
+    margin-top: 20px;
+    width: 800px;
+}
+
+#main img,
+#main section {
+    float: left;
+
+}
+
+#main img {
+    width: 300px;
+    margin-right: 0px;
+}
+
+#main section {
+    width: 460px;
+    margin: 20px 0 0 30px;
+    line-height: 1.6;
+}
+
+#main section p {
+    margin-top: 0px
+}
+
+#main section h2.title {
+    font-size: 2rem;
+    color: #00009c
+}
+
+section#partners {
+    clear: left;
+    display: block;
+    margin: 60px 0 60px 300px;
+    padding-top: 5px;
+
+}
+
+.partner-projects {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    text-align: left;
+}
+
+#partners li {
+    list-style: none;
+    vertical-align: top;
+}
+
+#partners li {
+    background: url('../images/www.gif') no-repeat 0 4px;
+    background-size: contain;
+    padding-left: 35px;
+    width: 100%;
+    margin: 10px 0 0 0;
+}
